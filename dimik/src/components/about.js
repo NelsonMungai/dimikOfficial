@@ -22,18 +22,6 @@ export default function AppAbout(){
                         <Image src={img1}/>
                     </Col>
                     <Col sm={6}><p>Welcome to DIMIK Enterprises, where creativity meets craftsmanship. With a passion for fashion and an eye for detail, we're not just tailors; we're your partners in style. At DIMIK ENnterprises, we're dedicated to helping you create a wardrobe that reflects your individuality. Whether it's custom-made suits, dresses, or casual wear, we bring your unique vision to life with precision and flair. But we don't stop at personal attire. We also specialize in branding and customizing marketing items, corporate shirts, t-shirts, caps, and uniforms for a diverse range of groups and businesses. Our commitment to quality, creativity, and on-time delivery ensures that your brand shines in every stitch.</p>
-                    <div className='progress-block'>
-                        <h4>HTML/CSS/Javascript</h4>
-                        <ProgressBar now={html} label={`${html}%`} />
-                    </div>
-                    <div className='progress-block'>
-                        <h4>Repsonsive</h4>
-                        <ProgressBar now={repsonsive} label={`${repsonsive}%`} />
-                    </div>
-                    <div className='progress-block'>
-                        <h4>PHOTOSHOP</h4>
-                        <ProgressBar now={bootstrap} label={`${bootstrap}%`} />
-                    </div>
                     </Col>
                 </Row>
             </Container>

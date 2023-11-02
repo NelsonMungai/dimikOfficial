@@ -2,11 +2,11 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image  from 'react-bootstrap/Image';
-import Pagination from 'react-bootstrap/Pagination';
+import 'bootstrap/dist/css/bootstrap.min.css'
 const worksData=[
     {
         id:1,
-        link:"https://www.google.com",
+        link:"/portfolio",
         images:require("../assets/T-shirts/Branded T-shirts1.jpg"),
         title:"T-shirt Design",
         subtitle:"We Design You"
@@ -14,7 +14,7 @@ const worksData=[
     },
     {
         id:2,
-        link:"https://www.google.com",
+        link:"/portfolio",
         images:require("../assets/Shirts/Tailored Office Shirts.png"),
         title:"Corporate Shirts",
         subtitle:"Represent you"
@@ -22,7 +22,7 @@ const worksData=[
     },
     {
         id:3,
-        link:"https://www.google.com",
+        link:"/portfolio",
         images:require("../assets/HeadWear/Branded cap1.jpg"),
         title:"Cap Design",
         subtitle:"Branded Cap designs"
@@ -30,7 +30,7 @@ const worksData=[
     },
     {
         id:4,
-        link:"https://www.google.com",
+        link:"/portfolio",
         images:require("../assets/SportsWear/track suit2.jpg"),
         title:"Sports Design",
         subtitle:"Lorem Ipsum"
@@ -38,7 +38,7 @@ const worksData=[
     },
     {
         id:5,
-        link:"https://www.google.com",
+        link:"/portfolio",
         images:require("../assets/Uniforms/Security Image2.webp"),
         title:"Uniforms",
         subtitle:"Uniforms from different sectors"
@@ -46,7 +46,7 @@ const worksData=[
     },
     {
         id:6,
-        link:"https://www.google.com",
+        link:"/portfolio",
         images:require("../assets/Pollo/dimikpollo1.jpeg"),
         title:"Pollo Shirts",
         subtitle:"Lorem Ipsum"
@@ -54,7 +54,7 @@ const worksData=[
     },
     {
         id:7,
-        link:"https://www.google.com",
+        link:"/portfolio",
         images:require("../assets/Reflectors/Reflectors.jpg"),
         title:"Reflectors Design",
         subtitle:"Lorem Ipsum"
@@ -62,7 +62,7 @@ const worksData=[
     },
     {
         id:8,
-        link:"https://www.google.com",
+        link:"/portfolio",
         images:require("../assets/DustCoats/Dust Coats.jpg"),
         title:"Protectives",
         subtitle:"Aprons & Overalls & DustCoats"
@@ -70,7 +70,7 @@ const worksData=[
     },
     {
         id:9,
-        link:"https://www.google.com",
+        link:"/portfolio",
         images:require("../assets/Hoddies/Hoddy Design1.jpg"),
         title:"Hoody Design",
         subtitle:"Lorem Ipsum"
@@ -78,15 +78,6 @@ const worksData=[
     }
 
 ]
-let active = 2;
-let items = [];
-for (let number = 1; number <= 5; number++) {
-  items.push(
-    <Pagination.Item key={number} active={number === active}>
-      {number}
-    </Pagination.Item>,
-  );
-}
 
 export default function AppWorks(){
     return(
@@ -118,8 +109,10 @@ export default function AppWorks(){
                     }
                     
                 </Row>
-                <Pagination>{items}</Pagination>
              </Container>
+             <div className='text-center mx-4'>
+                <a href="/portfolio" className="btn btn-primary">Gallery</a>
+            </div>
         </section>
     )
 }

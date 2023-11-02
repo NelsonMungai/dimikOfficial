@@ -3,21 +3,21 @@ let heroData=[
     {
         id:1,
         image:require('../assets/IMG/Hero/dimikBG.jpg'),
-        title:"The perfect Design For You",
+        title:"Individuality in Every Design",
         description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ullam animi explicabo dolorem fuga dignissimos rerum voluptates. Ducimus, nihil qui.',
-        link:'https://www.google.com'
+        link:'#about'
         },
         {id:2,
-        image:require('../assets/IMG/Hero/dimik4.jpg'),
-        title:"The perfect Design For You",
+        image:require('../assets/Shirts/BatchShirt5.jpg'),
+        title:"Create You own style",
         description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ullam animi explicabo dolorem fuga dignissimos rerum voluptates. Ducimus, nihil qui.',
-        link:'https://www.facebook.com'
+        link:'#about'
         },
         {id:3,
-        image:require('../assets/IMG/Hero/vecteezy_sewing-machine-and-threads-parts-as-follows-presser-foot_10234227_343.jpg'),
-        title:"The perfect Design For You",
+        image:require('../assets/Bags/Designer Bags.jpg'),
+        title:"Create You own style",
         description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ullam animi explicabo dolorem fuga dignissimos rerum voluptates. Ducimus, nihil qui.',
-        link:'https://www.twitter.com'
+        link:'#about'
         },
 ]
 export default function AppHero(){
@@ -34,7 +34,7 @@ export default function AppHero(){
                         <Carousel.Caption>
                         <h3>{hero.title}</h3>
                         <p>{hero.description}</p>
-                        <a className="btn btn-primary"href={hero.link}>LearnMore<i className="fas fa-chevron-right"></i></a>
+                        <a className="btn btn-primary"href={hero.link}>Learn More<i className="fas fa-chevron-right"></i></a>
                         </Carousel.Caption>
                     </Carousel.Item>
                 )

@@ -13,7 +13,33 @@ html {
   margin: 0;
   padding: 0;
 }
+/* porfolio */
+.banner{
+  background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./assets/About/wallpaper.jpg);
+  height:30vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  margin-bottom: 20px;
+}
+.banner h1{
+  text-align: center;
+  font-size:2.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.portfoliolist img{
+  width:100%;
+  height: 300px;
+  object-fit: cover;
+}
+.portfoliolist img:hover{
+  object-fit: contain;
+}
 
+/* portfolio end */
 body {
   color: #333;
   background: #fff;
@@ -481,7 +507,7 @@ img.d-block{
 
 .hero-block .carousel-item:before {
   content: '';
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
   bottom: 0;
