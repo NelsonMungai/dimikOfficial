@@ -1,22 +1,22 @@
 import Carousel from 'react-bootstrap/Carousel';
 let heroData=[
     {
-        id:1,
-        image:require('../assets/IMG/Hero/dimikBG.jpg'),
-        title:"Individuality in Every Design",
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ullam animi explicabo dolorem fuga dignissimos rerum voluptates. Ducimus, nihil qui.',
-        link:'#about'
+        id: 1,
+        image: require('../assets/IMG/Hero/dimikBG.jpg'),
+        title: 'Experience Timeless Elegance and Craftsmanship',
+        description: 'Welcome to our world of exquisite tailoring and design. We are dedicated to bringing you the finest in tailored shirts and custom clothing, ensuring you always look your best with a touch of sophistication and timeless style.',
+        link: '#about'
         },
         {id:2,
         image:require('../assets/Shirts/BatchShirt5.jpg'),
-        title:"Create You own style",
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ullam animi explicabo dolorem fuga dignissimos rerum voluptates. Ducimus, nihil qui.',
+        title:"Elevate Your Style with Custom Tailoring",
+        description:'Discover the perfect fit and design for your corporate shirts and attire. We specialize in crafting tailored shirts, ensuring you look your best for any occasion.',
         link:'#about'
         },
         {id:3,
         image:require('../assets/Bags/Designer Bags.jpg'),
-        title:"Create You own style",
-        description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem ullam animi explicabo dolorem fuga dignissimos rerum voluptates. Ducimus, nihil qui.',
+        title:"Accessorize with Our Custom Bags",
+        description:'Complete your look with our custom bags and accessories. Our designer bags are the perfect addition to your outfit, adding a touch of uniqueness.',
         link:'#about'
         },
 ]
