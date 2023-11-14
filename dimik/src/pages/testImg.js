@@ -127,7 +127,7 @@ const ItemsData=[
     {
         id:25,
         category:"shirts",
-        img:require("../assets/Shirts/Tailored Office Shirts.png")
+        img:require("../assets/Shirts/Tailored Office Shirts.jpg")
     },
     // Aprons
     {
@@ -346,37 +346,37 @@ const ItemsData=[
     {
         id:68,
         category:"t-shirts",
-        img:require("../assets/T-shirts/dimikT1.webp")
+        img:require("../assets/T-shirts/dimikT5.webp")
     },
     {
         id:69,
         category:"t-shirts",
-        img:require("../assets/T-shirts/dimikT2.webp")
+        img:require("../assets/T-shirts/dimikT6.webp")
     },
     {
         id:70,
         category:"t-shirts",
-        img:require("../assets/T-shirts/dimikT3.webp")
+        img:require("../assets/T-shirts/dimikT8.jpg")
     },
     {
         id:71,
         category:"t-shirts",
-        img:require("../assets/T-shirts/dimikT4.webp")
+        img:require("../assets/T-shirts/madarin collar T-shirts1.webp")
     },
     {
         id:72,
         category:"t-shirts",
-        img:require("../assets/T-shirts/dimikT5.webp")
+        img:require("../assets/T-shirts/Mandarin collar T-shirt.webp")
     },
     {
         id:73,
         category:"t-shirts",
-        img:require("../assets/T-shirts/dimikT6.webp")
+        img:require("../assets/T-shirts/mandarin collar T-shirts.webp")
     },
     {
         id:74,
         category:"t-shirts",
-        img:require("../assets/T-shirts/dimikT8.jpg")
+        img:require("../assets/T-shirts/obliqueButtonShirt.webp")
     },
     // uniforms
     {

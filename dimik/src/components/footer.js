@@ -25,7 +25,7 @@ export default function AppFooter(){
             <div className="socials">
                 <ul>
                     <li><a href="https://www.facebook.com"><i className="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.twitter.com"><i className="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a></li>
                     <li><a href="https://www.linkedIn.com"><i className="fab fa-linkedin-in"></i></a></li>
                 </ul>
             </div>

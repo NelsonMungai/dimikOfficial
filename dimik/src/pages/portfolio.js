@@ -127,22 +127,22 @@ const ItemsData=[
     {
         id:25,
         category:"shirts",
-        img:require("../assets/Shirts/Tailored Office Shirts.png")
+        img:require("../assets/Shirts/Tailored Office Shirts.jpg")
     },
     // Aprons
     {
         id:26,
-        category:"Apron",
+        category:"protectives",
         img:require("../assets/Apron&Overalls/Apron.jpg")
     },
     {
         id:27,
-        category:"Apron",
+        category:"protectives",
         img:require("../assets/Apron&Overalls/Overalls.2jpg.jpg")
     },
     {
         id:28,
-        category:"Apron",
+        category:"protectives",
         img:require("../assets/Apron&Overalls/ApronBatch.jpg")
     },
     // Bags
@@ -169,7 +169,7 @@ const ItemsData=[
     // DustCoats
     {
         id:33,
-        category:"DustCoat",
+        category:"protectives",
         img:require("../assets/DustCoats/Dust Coats.jpg")
     },
     // HeadWear
@@ -303,7 +303,7 @@ const ItemsData=[
     // Reflector
     {
         id:60,
-        category:"reflector",
+        category:"protectives",
         img:require("../assets/Reflectors/Reflectors.jpg")
     },
     // Sports
@@ -346,35 +346,50 @@ const ItemsData=[
     {
         id:68,
         category:"t-shirts",
-        img:require("../assets/T-shirts/dimikT1.webp")
+        img:require("../assets/T-shirts/obliqueShirts.jpg")
     },
     {
         id:69,
         category:"t-shirts",
-        img:require("../assets/T-shirts/dimikT2.webp")
+        img:require("../assets/T-shirts/dimikT6.webp")
     },
     {
         id:70,
         category:"t-shirts",
-        img:require("../assets/T-shirts/dimikT3.webp")
+        img:require("../assets/T-shirts/V-neck Women2.jpg")
     },
     {
         id:71,
         category:"t-shirts",
-        img:require("../assets/T-shirts/dimikT4.webp")
+        img:require("../assets/T-shirts/madarin collar T-shirts1.webp")
     },
     {
         id:72,
         category:"t-shirts",
-        img:require("../assets/T-shirts/dimikT5.webp")
+        img:require("../assets/T-shirts/Mandarin collar T-shirt.webp")
     },
     {
         id:73,
         category:"t-shirts",
-        img:require("../assets/T-shirts/dimikT6.webp")
+        img:require("../assets/T-shirts/mandarin collar T-shirts.webp")
     },
     {
         id:74,
+        category:"t-shirts",
+        img:require("../assets/T-shirts/obliqueButtonShirt.webp")
+    },
+    {
+        id:87,
+        category:"t-shirts",
+        img:require("../assets/T-shirts/V-neck-tshirt.jpg")
+    },
+    {
+        id:88,
+        category:"t-shirts",
+        img:require("../assets/T-shirts/V-neck Women.jpg")
+    },
+    {
+        id:89,
         category:"t-shirts",
         img:require("../assets/T-shirts/dimikT8.jpg")
     },
@@ -431,7 +446,7 @@ const ItemsData=[
     },
     {
         id:85,
-        category:"uniformm ",
+        category:"protectives",
         img:require("../assets/Sleeveless.jpg")
     },
 ]
@@ -488,14 +503,12 @@ export default function Portfolio() {
                 <button className='btn btn-primary mx-2 mb-2' onClick={()=>filterResult("shirts")}>Shirts</button>
                 <button className='btn btn-primary mx-2 mb-2' onClick={()=>filterResult("t-shirts")}>T-Shirts</button>
                 <button className='btn btn-primary mx-2 mb-2' onClick={()=>filterResult("pollo")}>Pollo</button>
-                <button className='btn btn-primary mx-2 mb-2' onClick={()=>filterResult("Apron")}>Protective</button>
+                <button className='btn btn-primary mx-2 mb-2' onClick={()=>filterResult("protectives")}>Protective</button>
                 <button className='btn btn-primary mx-2 mb-2' onClick={()=>filterResult("bag")}>Bags</button>
                 <button className='btn btn-primary mx-2 mb-2' onClick={()=>filterResult("uniform")}>Uniforms</button>
                 <button className='btn btn-primary mx-2 mb-2' onClick={()=>filterResult("hoody")}>Hoody</button>
-                <button className='btn btn-primary mx-2 mb-2' onClick={()=>filterResult("reflector")}>Reflectors</button>
                 <button className='btn btn-primary mx-2 mb-2' onClick={()=>filterResult("hats")}>Branded Caps</button>
                 <button className='btn btn-primary mx-2 mb-2' onClick={()=>filterResult("sportsWear")}>sportsWear</button>
-                <button className='btn btn-primary mx-2 mb-2' onClick={()=>filterResult("DustCoat")}>DustCoat</button>
                 <button className='btn btn-primary mx-2 mb-2' onClick={()=>setData(ItemsData)}>All</button>
               </div>
             </div>

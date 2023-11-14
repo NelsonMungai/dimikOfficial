@@ -14,18 +14,18 @@ export default function AppContact(){
                 <Form className="contact-form">
                     <Row>
                         <Col sm={4}>
-                        <Form.Control type="text" placeholder="Enter Your Full Name" required/>
+                        <Form.Control name="user_name"type="text" placeholder="Enter Your Full Name" required/>
                         </Col>
                         <Col sm={4}>
-                        <Form.Control type="email" placeholder="Enter Your email address" required/>
+                        <Form.Control name="user_email" type="email" placeholder="Enter Your email address" required/>
                         </Col>
                         <Col sm={4}>
-                        <Form.Control type="tel" placeholder="Enter Your tel Number(optional)" />
+                        <Form.Control name="tel" type="tel" placeholder="Enter Your tel Number(optional)" />
                         </Col>
                     </Row>
                     <Row>
                         <Col sm={12}>
-                            <Form.Control as="textarea" placeholder="Type Your message" required/>
+                            <Form.Control name="message"as="textarea" placeholder="Type Your message" required/>
                         </Col>
                     </Row>
                     <div className="btn-holder">

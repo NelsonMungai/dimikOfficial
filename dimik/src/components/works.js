@@ -15,7 +15,7 @@ const worksData=[
     {
         id:2,
         link:"/portfolio",
-        images:require("../assets/Shirts/Tailored Office Shirts.png"),
+        images:require("../assets/Shirts/BatchShirt1.jpg"),
         title:"Corporate Shirts",
         subtitle:"Represent you"
 
