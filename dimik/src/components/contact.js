@@ -3,7 +3,37 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
+import { useState } from 'react';
 export default function AppContact(){
+    const [userData,setUserData]=useState({
+        Name:"",Email:"",Tel:"",Message:""
+    })
+    let name,value
+    const data=(e)=>{
+        name=e.target.name
+        value=e.target.value
+        setUserData({...userData,[name]:value})
+    }
+
+    const send= async(e)=>{
+        const {Name,Email,Tel,Message}=userData;
+        e.preventDefault();
+        const option={
+            method:"POST",
+            headers:{
+                'Content-Type':'application/json'
+            },
+            body:JSON.stringify({
+                Name,Email,Tel,Message
+            })
+        }
+        const res=await fetch("https://contactform2-2039c-default-rtdb.firebaseio.com/Messages.json",option)
+        console.log(res)
+        if(res){
+            alert("Message sent successfully")
+        }
+    }
+
     return (
         <section id="contact" className="block contact-block">
             <Container fluid>
@@ -14,22 +44,22 @@ export default function AppContact(){
                 <Form className="contact-form">
                     <Row>
                         <Col sm={4}>
-                        <Form.Control name="user_name"type="text" placeholder="Enter Your Full Name" required/>
+                        <Form.Control name="Name" value={userData.Name}type="text" placeholder="Enter Your Full Name" required autoComplete='off' onChange={data}/>
                         </Col>
                         <Col sm={4}>
-                        <Form.Control name="user_email" type="email" placeholder="Enter Your email address" required/>
+                        <Form.Control name="Email" value={userData.Email} type="email" placeholder="Enter Your email address" required autoComplete='off' onChange={data}/>
                         </Col>
                         <Col sm={4}>
-                        <Form.Control name="tel" type="tel" placeholder="Enter Your tel Number(optional)" />
+                        <Form.Control name="Tel" value={userData.Tel} type="tel" placeholder="Enter Your tel Number(optional)" autoComplete='off' onChange={data}/>
                         </Col>
                     </Row>
                     <Row>
                         <Col sm={12}>
-                            <Form.Control name="message"as="textarea" placeholder="Type Your message" required/>
+                            <Form.Control name="Message"value={userData.Message} as="textarea" placeholder="Type Your message" required autoComplete='off' onChange={data}/>
                         </Col>
                     </Row>
                     <div className="btn-holder">
-                        <Button type="submit">Submit</Button>
+                        <Button type="submit" onClick={send}>Send</Button>
                     </div>
                 </Form>
               </Container>
