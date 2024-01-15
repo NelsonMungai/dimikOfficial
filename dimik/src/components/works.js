@@ -33,7 +33,7 @@ const worksData=[
         link:"/portfolio",
         images:require("../assets/SportsWear/track suit2.jpg"),
         title:"Sports Design",
-        subtitle:"Lorem Ipsum"
+        subtitle:"Quality Sports wear"
 
     },
     {
@@ -49,7 +49,7 @@ const worksData=[
         link:"/portfolio",
         images:require("../assets/Pollo/dimikpollo1.jpeg"),
         title:"Pollo Shirts",
-        subtitle:"Lorem Ipsum"
+        subtitle:"varities"
 
     },
     {
@@ -57,7 +57,7 @@ const worksData=[
         link:"/portfolio",
         images:require("../assets/Reflectors/Reflectors.jpg"),
         title:"Reflectors Design",
-        subtitle:"Lorem Ipsum"
+        subtitle:"dimik"
 
     },
     {
@@ -73,7 +73,7 @@ const worksData=[
         link:"/portfolio",
         images:require("../assets/Hoddies/Hoddy Design1.jpg"),
         title:"Hoody Design",
-        subtitle:"Lorem Ipsum"
+        subtitle:"Let's be creative"
 
     }
 
